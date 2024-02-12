@@ -148,6 +148,7 @@
   padding: 0px 13px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -195,7 +196,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 1023px) {
   .header__paragraph {
     max-width: 491px;
     width: 100%;
@@ -213,7 +214,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 1023px) {
   .header__text {
     padding-top: 100px;
     padding-bottom: 116px;
