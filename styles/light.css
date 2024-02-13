@@ -1,51 +1,47 @@
-:root.theme_light {
-  /* Переменные светлой темы */
-  --bg-image: url(../images/cover-image-light.png);
-  --accent-color-text: #353430;
-  --main-text-color: #353430;
-  --accent-color-bg: #FF8DCB;
-  --header-text: #FFC2E6;
-  --bg-color: #FFF1F7;
-  --title-decor-text: #000028;
-  --font: 'IBM Plex Mono', monospace;
-  --hover-color: rgba(50, 49, 45, 0.40);
+.page.theme_light {
+  --bg: url(../images/cover-image-light.png) #FFF1F7;
+  --accent-color: #FF8DCB;
+  --title-color: #353430;
+  --shadow-color: #FF8DCB;
+  --decor-color: #353430;
+  --decor-border: 1px solid var(--decor-color);
+  --hover-border: 1px solid rgba(50, 49, 45, 0.40);
+  --article-color: #353430;
+  --header-title-color: #FFC2E6;
+  --section-title-color: #353430;
+}
+
+.page.theme_light .decorate {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .page.theme_light {
+    --shadow-color: #FF0070;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image: url(../images/cover-image-light.png);
-    --accent-color-text: #353430;
-    --main-text-color: #353430;
-    --accent-color-bg: #FF8DCB;
-    --header-text: #FFC2E6;
-    --bg-color: #FFF1F7;
-    --title-decor-text: #000028;
-    --font: 'IBM Plex Mono', monospace;
-    --hover-color: rgba(50, 49, 45, 0.40);
+    --bg: url(../images/cover-image-light.png) #FFF1F7;
+    --accent-color: #FF8DCB;
+    --title-color: #353430;
+    --shadow-color: #FF8DCB;
+    --decor-color: #353430;
+    --decor-border: 1px solid var(--decor-color);
+    --hover-border: 1px solid rgba(50, 49, 45, 0.40);
+    --article-color: #353430;
+    --header-title-color: #FFC2E6;
+    --section-title-color: #353430;
   }
-}
 
-.page.theme_light {
-  --bg-image: url(../images/cover-image-light.png);
-  --accent-color-text: #353430;
-  --main-text-color: #353430;
-  --accent-color-bg: #FF8DCB;
-  --header-text: #FFC2E6;
-  --bg-color: #FFF1F7;
-  --title-decor-text: #000028;
-  --font: 'IBM Plex Mono', monospace;
-  --hover-color: rgba(50, 49, 45, 0.40);
-
-  .tag__marker {
-    visibility: hidden;
+  @media (width >= 1024px) {
+    .page {
+      --shadow-color: #FF0070;
+    }
   }
-  
-  .header__theme-menu-button_type_light {
-    outline: 1px solid var(--accent-color-text);
-    display: inline-flex;
-    height: 26px;
-    padding: 0px 13px;
-    justify-content: center;
-    align-items: center;
+
+  .page .decorate {
+    display: none;
   }
 }
